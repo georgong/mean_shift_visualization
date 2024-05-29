@@ -45,13 +45,18 @@ button:hover {
 
 #graph1 {
   position: relative;
-  left: 100px;
+  left: 90px;
   top: 50px;
 }
 
 #clear_data{
   position: relative;
-  left: 150px;
+  left: 175px;
   top: -50px
 
+}
+
+body {
+  width:1300px;
+  margin:0 auto;
 }
