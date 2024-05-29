@@ -1,0 +1,57 @@
+.page {
+  height: 90vh;
+  width: calc(100% - 0px); /* Adjust width to make space for sidebar */
+  float: right; /* Ensures it lines up correctly with the sidebar */
+  display: flex; /* Using Flexbox for centering content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  /*text-align: center; /* Ensure text is centered */
+}
+
+#page1 { background-color: rgb(173, 216, 230,0.4); 
+}
+#page2 { background-color: lightgreen; }
+#page3 { background-color: lightyellow; }
+#page4 { background-color: lightcoral; }
+#page5 { background-color: lightgray; }
+
+.discription {
+  margin: 20; /* Removes default margin */
+  width: 90%; /* Adjusts width, providing a better format for text */
+}
+
+.graph {
+  margin: 100; /* Removes default margin */
+  width: 90%; /* Adjusts width, providing a better format for text */
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  transition: all 0.5;
+  &:active{
+    background-color: aliceblue;
+    transition: all 0.5;
+  }
+}
+
+button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+#graph1 {
+  position: relative;
+  left: 100px;
+  top: 50px;
+}
+
+#clear_data{
+  position: relative;
+  left: 150px;
+  top: -50px
+
+}

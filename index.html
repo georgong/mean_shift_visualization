@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Mean Shift algorithm for clustering</title>
+
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <div class="page" id="page1">
+    <div class = "discription">
+    <h1>Mean Shift Algorithm for Clustering</h1>
+    <br>
+    <h2><li>What is Mean Shift</li></h2>
+    <h2><li>Mean shift calculate the mean value of data in circular windows</li></h2>
+    <h2><li>the mean value of data is the centeroid, which decide the direction for windows to shift</li></h2>
+    <h2><li>click on the graph to see how centeroid affect by data</li></h2>
+    </div>
+    <div id = "graph1" class = "graph"  style="margin:relative 10px 50px 20px;">
+      <svg id ="img1" width="500" height="500">
+      </svg>
+      <button id = "clear_data" onclick="clear_graph1()">Shift</button>
+      </div>
+  </div>
+
+  <div class="page" id="page2"> </div>
+  </body>
+  <script src="main.js"></script>
+</html>
