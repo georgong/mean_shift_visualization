@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 .page {
   height: 90vh;
   width: calc(100% - 0px); /* Adjust width to make space for sidebar */
@@ -7,11 +8,13 @@
   align-items: center; /* Center vertically */
   /*text-align: center; /* Ensure text is centered */
 }
-
-#page1 { background-color: rgb(173, 216, 230,0.4); 
+#page0 { background-color: lightgray; 
+}
+#page1 { background-color: rgba(173, 216, 230,0.4); 
 }
 #page2 { background-color: lightgreen; }
-#page3 { background-color: lightyellow; }
+#page2-1 { background-color: lightgray; }
+#page3 { background-color: rgb(190, 241, 248); }
 #page4 { background-color: lightcoral; }
 #page5 { background-color: lightgray; }
 
@@ -59,4 +62,51 @@ button:hover {
 body {
   width:1300px;
   margin:0 auto;
+}
+.fly-in-text2 {
+  opacity: 0;
+  transform: translateX(-100px); 
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+.fly-in-text4 {
+  opacity: 0;
+  transform: translateX(-100px); 
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+.fly-in-text6 {
+  opacity: 0;
+  transform: translateX(-100px); 
+  transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+}
+.fly-in-text8 {
+  opacity: 0;
+  transform: translateX(-100px); 
+  transition: transform 1.6s ease-out, opacity 1.6s ease-out;
+}
+.fly-in-topic {
+  animation: fly-in 2s ease-in;
+}
+.fly-in-text {
+  opacity: 0;
+  transform: translateX(-100px); /* Start off-screen */
+  transition: transform 1.8s ease-out, opacity 1.8s ease-out;
+}
+
+@keyframes fly-in {
+  from {
+    opacity: 0.1;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+text {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.text_style {
+  font-family: 'Open Sans', sans-serif;
 }

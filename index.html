@@ -6,15 +6,26 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
   </head>
   <body>
+    <div class="page" id="page0">
+      <div class = "discription" style="margin:relative 10px 50px 20px;">
+        <h1 id = "page0text1" class = "text_style">Mean Shift Algorithm for Clustering</h1>
+        <br>
+        <h2 id = "page0text2" class = "text_style">Zhenghao Gong, Bingyan Liu, Stephaine Wang</h2>
+        </div>
+      <div class = "graph">
+        <svg id ="img0" width="500" height="500">
+        </svg>
+      </div>
+    </div>
     <div class="page" id="page1">
     <div class = "discription">
-    <h1>Mean Shift Algorithm for Clustering</h1>
+    <h1 id = "page1text1" class ="fly-in-text2 text_style">Mean Shift Algorithm for Clustering</h1>
     <br>
-    <h2><li>Mean Shift is a algorithm for clustering or tracking task</li></h2>
-    <h2><li>To Start with, Mean shift calculate the mean value of data in a circular windows</li></h2>
-    <h2><li>The centeroid of data decides the direction for windows to shift</li></h2>
-    <h2><li>Click on the circular window to create data point, see how centeroid affect by data distribution</li></h2>
-    <h2>(You can also drag the data point)</h2>
+    <h2 id = "page1text2" class ="fly-in-text2 text_style"><li>Mean Shift is a algorithm for clustering or tracking task</li></h2>
+    <h2 id = "page1text3" class ="fly-in-text4 text_style"><li>To Start with, Mean shift calculate the mean value of data in a circular windows</li></h2>
+    <h2 id = "page1text4" class ="fly-in-text6 text_style"><li>The centeroid of data decides the direction for windows to shift</li></h2>
+    <h2 id = "page1text5" class ="fly-in-text8 text_style"><li>Click on the circular window to create data point, see how centeroid affect by data distribution</li></h2>
+    <h2 id = "page1text6" class ="fly-in-text text_style">(You can also drag the data point)</h2>
     </div>
     <div id = "graph1" class = "graph"  style="margin:relative 10px 50px 20px;">
       <svg id ="img1" width="500" height="500">
@@ -23,7 +34,75 @@
       </div>
   </div>
 
-  <div class="page" id="page2"> </div>
+  <div class="page" id="page2"> 
+    <div id = "graph2" class = "graph"  style="margin:relative 10px 50px 20px;">
+      <svg id ="img2" width="1200" height="600">
+      </svg>
+      </div>
+
+  </div>
+  <div class="page" id="page2-1"> 
+    <div id = "graph2-1" class = "graph"  style="margin:relative 10px 50px 20px;">
+      <svg id ="img2-1" width="1200" height="600">
+      </svg>
+      </div>
+
+  </div>
+  <div class="page" id="page3"> 
+      <div id = "graph3" class = "graph">
+    <svg id ="img3" width="600" height="600">
+    </svg>
+    </div>
+    <div id = "tool" style="width: 550px;height: 400px;margin:relative 10px 20px 20px;">
+      
+      
+        <label>iteration</label>
+        <input id = "iteration_set" type = "text" list = "iteration">
+        <datalist name="iteration" id="iteration">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="7">7</option>
+        </datalist>
+      
+      
+      <form action="#">
+        <label for="bindwidth">bindwidth</label>
+        <select name="bindwidth" id="bindwidth">
+          <option value="50">50</option>
+          <option value="100">100</option>
+          <option value="130">130</option>
+          <option value="150">150</option>
+          <option value="170">170</option>
+          <option value="200">200</option>
+          <option value="300">300</option>
+        </select>
+      </form>
+      <button onclick="show_bindwidth()">Show bindwidth of window</button>
+      <button onclick="perform_mean_shift()">Run</button>
+      <div style="width: 550px; height: 400px;margin:relative 10px 10px 20px;">
+        <h1>What Can you find?</h1>
+        <h2>When the iteration times is not enough, the algorithm may not converge</h2>
+        <h2>So we usually stop the iteration based on the renew of the centeroid</h2>
+        <h2>When the bind_width is too small, it has too many meangingless clusters</h2>
+        <h2>When the bind_width is large, it converges to some unfitted result</h2>
+      </div>
+    </div>
+  </div>
+    <div class="page" id="page4"> 
+      <div id = "graph4" class = "graph"  style="margin:relative 10px 10px 10px 10px;">
+        <svg id ="img5" width="400" height="400" style="margin:relative 10px 10px 10px;">
+        </svg>
+        </div>
+      <div id = "graph5" class = "graph"  style="margin:relative 10px 10px 10px 10px;">
+          <svg id ="img6" width="400" height="400" style="margin:relative 10px 10px 10px;">
+          </svg>
+        </div>
+    </div>
   </body>
+  <script src="page_2.js"></script>
+  <script src="page_2_1.js"></script>
+  <script src="page_3.js"></script>
   <script src="main.js"></script>
 </html>
