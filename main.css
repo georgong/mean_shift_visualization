@@ -15,8 +15,7 @@
 #page2 { background-color: lightgreen; }
 #page2-1 { background-color: lightgray; }
 #page3 { background-color: rgb(190, 241, 248); }
-#page4 { background-color: lightcoral; }
-#page5 { background-color: lightgray; }
+#page4 { background-color: lightgray; }
 
 .discription {
   margin: 20; /* Removes default margin */
@@ -25,6 +24,11 @@
 
 .graph {
   margin: 100; /* Removes default margin */
+  width: 90%; /* Adjusts width, providing a better format for text */
+}
+
+.multigraph {
+  margin: 10; /* Removes default margin */
   width: 90%; /* Adjusts width, providing a better format for text */
 }
 
