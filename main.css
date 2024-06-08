@@ -8,11 +8,11 @@
   align-items: center; /* Center vertically */
   /*text-align: center; /* Ensure text is centered */
 }
-#page0 { background-color: lightgray; 
+#page0 { background-color: hsl(210, 50%, 90%); 
 }
 #page1 { background-color: rgba(173, 216, 230,0.4); 
 }
-#page2 { background-color: lightgreen; }
+#page2 { background-color: hsl(209, 70%, 50%); }
 #page2-1 { background-color: lightgray; }
 #page3 { background-color: rgb(190, 241, 248); }
 #page4 { background-color: lightgray; }
